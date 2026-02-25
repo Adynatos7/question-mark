@@ -83,7 +83,10 @@ async function listEntries(store) {
 }
 
 exports.handler = async (event) => {
-  const store = getStore('questions_store');
+  const store = getStore('questions_store', {
+    siteID: process.env.NETLIFY_SITE_ID || process.env.SITE_ID,
+    token: process.env.NETLIFY_BLOBS_TOKEN || process.env.NETLIFY_AUTH_TOKEN
+  });
 
   if (event.httpMethod === 'POST') {
     let body;
