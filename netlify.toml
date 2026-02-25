@@ -6,3 +6,8 @@
   from = "/api/questions"
   to = "/.netlify/functions/questions"
   status = 200
+
+[[redirects]]
+  from = "/api/admin/questions"
+  to = "/.netlify/functions/admin-questions"
+  status = 200

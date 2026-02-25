@@ -1,0 +1,37 @@
+.admin-wrap {
+  width: min(980px, 94vw);
+  margin: 1.5rem auto 3rem;
+}
+
+.admin-top {
+  display: flex;
+  gap: 0.7rem;
+  flex-wrap: wrap;
+}
+
+.admin-muted {
+  color: #595246;
+  font-size: 0.92rem;
+}
+
+.admin-list {
+  display: grid;
+  gap: 0.9rem;
+  margin-top: 1rem;
+}
+
+.admin-actions {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-top: 0.7rem;
+}
+
+.small {
+  padding: 0.5rem 0.85rem;
+  font-size: 0.9rem;
+}
+
+.hide {
+  display: none;
+}
